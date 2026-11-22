@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #D4AF37;
+  --ds-shadow-default: 0 4px 20px rgba(0,0,0,0.3);
+  --ds-shadow-hover: 0 8px 30px rgba(212,175,55,0.2);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #0A0A0A;
+  --ds-color-surface: #121212;
+  --ds-color-primary: #D4AF37;
+  --ds-color-secondary: #FFFFFF;
+  --ds-color-accent: #FFFFFF;
+  --ds-color-ink: #F5F0E8;
+  --ds-color-muted: #888888;
+  --ds-color-border: #333333;
+  --ds-color-focus: #D4AF37;
+  --ds-color-error: #C0392B;
+  --ds-color-success: #27AE60;
+  --ds-color-white: #FFFFFF;
+  --ds-color-gold: #D4AF37;
+  --ds-color-goldLight: #F4E4A8;
+  --ds-color-goldDark: #B8962E;
+  --ds-color-black: #000000;
+  --ds-color-charcoal: #1A1A1A;
+  --ds-font-heading: "Didot", "Bodoni", "Playfair Display", serif;
+  --ds-font-body: "Cormorant Garamond", "Georgia", serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-light: 300;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 500ms;
+  --ds-motion-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

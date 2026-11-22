@@ -1,0 +1,136 @@
+# promptfoo benchmark config for designsense
+# Run: npx promptfoo eval -c benchmarks/promptfooconfig.yaml
+
+providers:
+  - id: claude
+    config:
+      model: claude-3-5-sonnet-20241022
+
+prompts:
+  - file: prompts/login-form.yaml
+  - file: prompts/dashboard-table.yaml
+  - file: prompts/settings-page.yaml
+  - file: prompts/checkout-flow.yaml
+  - file: prompts/modal-dialog.yaml
+  - file: prompts/navigation.yaml
+  - file: prompts/data-table.yaml
+  - file: prompts/card-grid.yaml
+  - file: prompts/form-validation.yaml
+  - file: prompts/empty-states.yaml
+
+tests:
+  - vars:
+      style: neobrutalism
+      level: full
+    assert:
+      - type: contains
+        value: "ds-btn"
+      - type: contains
+        value: "aria-busy"
+      - type: contains
+        value: "aria-invalid"
+      - type: not-contains
+        value: "outline: none"
+      - type: javascript
+        value: |
+          // Check contrast tokens used
+          output.includes('var(--ds-color-') || output.includes('tokens.color.')
+      - type: javascript
+        value: |
+          // Check all states handled
+          const states = ['hover', 'focus', 'active', 'disabled', 'loading', 'empty', 'error'];
+          return states.every(s => output.includes(s) || output.includes(s.charAt(0).toUpperCase() + s.slice(1)));
+
+  - vars:
+      style: glassmorphism
+      level: full
+    assert:
+      - type: contains
+        value: "backdrop-filter"
+      - type: contains
+        value: "rgba"
+      - type: contains
+        value: "aria-busy"
+      - type: not-contains
+        value: "outline: none"
+      - type: javascript
+        value: |
+          // Check glassmorphism tokens
+          output.includes('var(--ds-color-surface') || output.includes('tokens.color.surface')
+
+  - vars:
+      style: minimalism
+      level: full
+    assert:
+      - type: not-contains
+        value: "box-shadow"
+      - type: not-contains
+        value: "gradient"
+      - type: contains
+        value: "aria-busy"
+      - type: not-contains
+        value: "outline: none"
+
+  - vars:
+      style: neobrutalism
+      level: lite
+    assert:
+      - type: contains
+        value: "aria-busy"
+      - type: contains
+        value: "aria-invalid"
+      - type: not-contains
+        value: "outline: none"
+
+  - vars:
+      style: none
+      level: strict
+    assert:
+      - type: contains
+        value: "design-tokens"
+      - type: not-contains
+        value: "#"
+      - type: not-contains
+        value: "px;"
+      - type: contains
+        value: "aria-busy"
+
+# Metrics to collect
+metrics:
+  - name: axe_violations
+    type: javascript
+    value: |
+      // Run axe-core on generated HTML
+      // Return violation count
+  - name: states_covered
+    type: javascript
+    value: |
+      // Count loading/empty/error states present
+  - name: tokens_vs_hardcoded
+    type: javascript
+    value: |
+      // Ratio of token references vs hardcoded values
+  - name: keyboard_operable
+    type: javascript
+    value: |
+      // Check all interactive elements have focus styles
+  - name: style_fidelity
+    type: javascript
+    value: |
+      // Check against style signature patterns
+  - name: token_file_count
+    type: javascript
+    value: |
+      // Count files changed when switching styles
+  - name: token_time_cost
+    type: javascript
+    value: |
+      // Measure promptfoo execution time
+
+# CI threshold
+thresholds:
+  axe_violations: 0
+  states_covered: 7  # all 7 states
+  tokens_vs_hardcoded: 0.9  # 90% token usage
+  keyboard_operable: 1.0
+  style_fidelity: 0.8

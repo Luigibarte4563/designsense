@@ -1,0 +1,34 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #D4AF37;
+  --ds-shadow-default: 4px 4px 0 #1A1A2E;
+  --ds-shadow-hover: 6px 6px 0 #D4AF37;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 4px;
+  --ds-radius-lg: 8px;
+  --ds-radius-fan: 50% 50% 0 0;
+  --ds-color-bg: #1A1A2E;
+  --ds-color-surface: #16213E;
+  --ds-color-primary: #D4AF37;
+  --ds-color-secondary: #000000;
+  --ds-color-accent: #FFFFFF;
+  --ds-color-ink: #F5F0E8;
+  --ds-color-muted: #8B8B8B;
+  --ds-color-border: #D4AF37;
+  --ds-color-focus: #D4AF37;
+  --ds-color-error: #C0392B;
+  --ds-color-success: #27AE60;
+  --ds-color-white: #FFFFFF;
+  --ds-color-gold: #D4AF37;
+  --ds-color-goldLight: #F4E4A8;
+  --ds-color-goldDark: #B8962E;
+  --ds-color-black: #000000;
+  --ds-color-navy: #1A1A2E;
+  --ds-font-heading: "Cinzel", "Trajan Pro", serif;
+  --ds-font-body: "Montserrat", "Futura", sans-serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 400ms;
+  --ds-motion-easing: ease-in-out;
+}

@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 8px 8px 16px #A3B1C6, -8px -8px 16px #FFFFFF;
+  --ds-shadow-hover: 10px 10px 20px #A3B1C6, -10px -10px 20px #FFFFFF;
+  --ds-shadow-active: inset 4px 4px 8px #A3B1C6, inset -4px -4px 8px #FFFFFF;
+  --ds-shadow-pressed: inset 6px 6px 12px #A3B1C6, inset -6px -6px 12px #FFFFFF;
+  --ds-shadow-concave: inset 8px 8px 16px #A3B1C6, inset -8px -8px 16px #FFFFFF;
+  --ds-radius-sm: 12px;
+  --ds-radius-md: 20px;
+  --ds-radius-lg: 28px;
+  --ds-radius-xl: 40px;
+  --ds-color-bg: #E0E5EC;
+  --ds-color-surface: #E0E5EC;
+  --ds-color-primary: #6C7A89;
+  --ds-color-secondary: #A3B1C6;
+  --ds-color-accent: #FF6B6B;
+  --ds-color-ink: #2D3748;
+  --ds-color-muted: #8A9BB8;
+  --ds-color-border: transparent;
+  --ds-color-focus: #4299E1;
+  --ds-color-error: #E53E3E;
+  --ds-color-success: #38A169;
+  --ds-color-white: #FFFFFF;
+  --ds-color-shadowDark: #A3B1C6;
+  --ds-color-shadowLight: #FFFFFF;
+  --ds-font-heading: "Inter", "SF Pro Display", sans-serif;
+  --ds-font-body: "Inter", "SF Pro Text", sans-serif;
+  --ds-font-mono: "SF Mono", "Fira Code", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: ease-out;
+}

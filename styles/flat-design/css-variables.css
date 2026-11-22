@@ -1,0 +1,30 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: none;
+  --ds-shadow-hover: none;
+  --ds-shadow-active: none;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 4px;
+  --ds-radius-lg: 8px;
+  --ds-color-bg: #FFFFFF;
+  --ds-color-surface: #F5F5F5;
+  --ds-color-primary: #007AFF;
+  --ds-color-secondary: #5856D6;
+  --ds-color-accent: #FF2D55;
+  --ds-color-ink: #1C1C1E;
+  --ds-color-muted: #8E8E93;
+  --ds-color-border: #C6C6C8;
+  --ds-color-focus: #007AFF;
+  --ds-color-error: #FF3B30;
+  --ds-color-success: #34C759;
+  --ds-color-white: #FFFFFF;
+  --ds-font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  --ds-font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --ds-font-mono: "SF Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 150ms;
+  --ds-motion-easing: ease-out;
+}

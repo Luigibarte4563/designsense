@@ -1,0 +1,11 @@
+{
+  "name": "designsense",
+  "version": "0.1.0",
+  "description": "UI/UX principles and style plugin for AI coding agents",
+  "license": "MIT",
+  "scripts": {
+    "install:designsense": "node scripts/install.js",
+    "install:all": "node scripts/install.js --force",
+    "uninstall": "node scripts/uninstall.js"
+  }
+}

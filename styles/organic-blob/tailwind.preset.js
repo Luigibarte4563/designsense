@@ -1,0 +1,61 @@
+module.exports = {
+  theme: {
+    extend: {
+      colors: { ds: {
+            "bg": "#FEF7F0",
+            "surface": "#FFFFFF",
+            "primary": "#FF8C42",
+            "secondary": "#6BCB77",
+            "accent": "#4ECDC4",
+            "ink": "#2D2D2D",
+            "muted": "#95A5A6",
+            "border": "transparent",
+            "focus": "#FF8C42",
+            "error": "#E74C3C",
+            "success": "#2ECC71",
+            "white": "#FFFFFF",
+            "blob1": "#FFE66D",
+            "blob2": "#95E1D3",
+            "blob3": "#F38BA8",
+            "blob4": "#A8E6CF"
+      } },
+      borderWidth: {
+            "ds": "0px"
+      },
+      boxShadow: {
+            "ds-default": "0 8px 32px rgba(0,0,0,0.1)",
+            "ds-hover": "0 12px 40px rgba(0,0,0,0.15)"
+      },
+      borderRadius: {
+            "ds-sm": "24px 20px 28px 22px / 20px 24px 22px 28px",
+            "ds-md": "32px 28px 36px 30px / 28px 32px 30px 36px",
+            "ds-lg": "48px 40px 52px 44px / 40px 48px 44px 52px",
+            "ds-blob": "60% 40% 30% 70% / 60% 30% 70% 40%",
+            "ds-morph1": "55% 45% 35% 65% / 55% 35% 65% 45%",
+            "ds-morph2": "65% 35% 25% 75% / 65% 25% 75% 35%"
+      },
+      fontFamily: {
+            "heading": [
+                  "\"Nunito\", \"Quicksand\", sans-serif"
+            ],
+            "body": [
+                  "\"Nunito\", \"Quicksand\", sans-serif"
+            ],
+            "mono": [
+                  "\"Fira Code\", monospace"
+            ]
+      },
+      fontWeight: {
+            "ds-normal": 500,
+            "ds-medium": 600,
+            "ds-bold": 800
+      },
+      transitionDuration: {
+            "ds": "500ms"
+      },
+      transitionTimingFunction: {
+            "ds": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #E0E0E0;
+  --ds-shadow-default: 0 1px 3px rgba(0,0,0,0.08);
+  --ds-shadow-hover: 0 4px 12px rgba(0,0,0,0.12);
+  --ds-shadow-active: 0 1px 3px rgba(0,0,0,0.08);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #FAFAFA;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #1976D2;
+  --ds-color-secondary: #7B1FA2;
+  --ds-color-accent: #E91E63;
+  --ds-color-ink: #212121;
+  --ds-color-muted: #757575;
+  --ds-color-border: #E0E0E0;
+  --ds-color-focus: #1976D2;
+  --ds-color-error: #D32F2F;
+  --ds-color-success: #388E3C;
+  --ds-color-white: #FFFFFF;
+  --ds-font-heading: "Roboto", "Helvetica Neue", sans-serif;
+  --ds-font-body: "Roboto", "Helvetica Neue", sans-serif;
+  --ds-font-mono: "Roboto Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}

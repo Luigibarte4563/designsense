@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #00FF00;
+  --ds-shadow-default: none;
+  --ds-shadow-hover: 0 0 10px #00FF00;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 0px;
+  --ds-radius-lg: 0px;
+  --ds-color-bg: #000000;
+  --ds-color-surface: #0D1117;
+  --ds-color-primary: #00FF00;
+  --ds-color-secondary: #00CC00;
+  --ds-color-accent: #FFFF00;
+  --ds-color-ink: #00FF00;
+  --ds-color-muted: #004400;
+  --ds-color-border: #003300;
+  --ds-color-focus: #FFFF00;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #00FF00;
+  --ds-color-white: #00FF00;
+  --ds-color-cursor: #00FF00;
+  --ds-color-selection: rgba(0,255,0,0.3);
+  --ds-color-prompt: #00FF00;
+  --ds-color-comment: #008800;
+  --ds-color-string: #FFA500;
+  --ds-color-keyword: #00FFFF;
+  --ds-color-function: #FF00FF;
+  --ds-font-heading: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --ds-font-body: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --ds-font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 0ms;
+  --ds-motion-easing: linear;
+}

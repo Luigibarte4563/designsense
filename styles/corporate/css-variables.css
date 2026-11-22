@@ -1,0 +1,34 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #D0D5DD;
+  --ds-shadow-default: 0 1px 3px rgba(0,0,0,0.08);
+  --ds-shadow-hover: 0 4px 12px rgba(0,0,0,0.1);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 6px;
+  --ds-radius-lg: 8px;
+  --ds-color-bg: #F9FAFB;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #1570EF;
+  --ds-color-primaryHover: #1D65D8;
+  --ds-color-secondary: #6B7280;
+  --ds-color-accent: #00A3E0;
+  --ds-color-ink: #111827;
+  --ds-color-muted: #6B7280;
+  --ds-color-border: #D0D5DD;
+  --ds-color-focus: #1570EF;
+  --ds-color-error: #DC2626;
+  --ds-color-success: #059669;
+  --ds-color-white: #FFFFFF;
+  --ds-color-tableHeader: #F3F4F6;
+  --ds-color-tableStripe: #F9FAFB;
+  --ds-font-heading: "Inter", "System UI", sans-serif;
+  --ds-font-body: "Inter", "System UI", sans-serif;
+  --ds-font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 150ms;
+  --ds-motion-easing: ease-out;
+  --ds-density-compact: true;
+  --ds-density-tablePadding: 8px 12px;
+}

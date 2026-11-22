@@ -1,0 +1,32 @@
+:root {
+  --ds-border-width: 3px;
+  --ds-border-color: #FF0000;
+  --ds-shadow-default: 8px 8px 0 #00FF00;
+  --ds-shadow-hover: 12px 12px 0 #0000FF;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 0px;
+  --ds-radius-xl: 20px;
+  --ds-color-bg: #FFFF00;
+  --ds-color-surface: #FF00FF;
+  --ds-color-primary: #000000;
+  --ds-color-secondary: #FFFFFF;
+  --ds-color-accent: #FF0000;
+  --ds-color-ink: #000000;
+  --ds-color-muted: #00FF00;
+  --ds-color-border: #FF0000;
+  --ds-color-focus: #0000FF;
+  --ds-color-error: #FF00FF;
+  --ds-color-success: #00FF00;
+  --ds-color-white: #FFFFFF;
+  --ds-color-clashing1: #FF00FF;
+  --ds-color-clashing2: #00FFFF;
+  --ds-color-clashing3: #FFFF00;
+  --ds-font-heading: "Comic Sans MS", "Chiller", cursive;
+  --ds-font-body: "Papyrus", "Jokerman", fantasy;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 900;
+  --ds-motion-duration: 100ms;
+  --ds-motion-easing: steps(2);
+}

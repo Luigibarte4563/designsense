@@ -1,0 +1,37 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #E8E8F0;
+  --ds-shadow-default: 0 2px 8px rgba(0,0,0,0.04);
+  --ds-shadow-hover: 0 4px 16px rgba(0,0,0,0.06);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-radius-xl: 32px;
+  --ds-radius-pill: 9999px;
+  --ds-color-bg: #FAFAFC;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #A8C0E8;
+  --ds-color-secondary: #E8C0A8;
+  --ds-color-accent: #C0E8A8;
+  --ds-color-ink: #4A4A5A;
+  --ds-color-muted: #A8A8B8;
+  --ds-color-border: #E8E8F0;
+  --ds-color-focus: #A8C0E8;
+  --ds-color-error: #E8A8A8;
+  --ds-color-success: #A8E8A8;
+  --ds-color-white: #FFFFFF;
+  --ds-color-pastel1: #E8D0E8;
+  --ds-color-pastel2: #D0E8E8;
+  --ds-color-pastel3: #E8E8D0;
+  --ds-color-pastel4: #F0E0D0;
+  --ds-color-pastel5: #E0F0D0;
+  --ds-color-pastel6: #E8D0F0;
+  --ds-font-heading: "Nunito", "Quicksand", sans-serif;
+  --ds-font-body: "Nunito", "Quicksand", sans-serif;
+  --ds-font-mono: "Fira Code", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: ease-out;
+}

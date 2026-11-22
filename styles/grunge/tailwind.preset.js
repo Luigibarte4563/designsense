@@ -1,0 +1,55 @@
+module.exports = {
+  theme: {
+    extend: {
+      colors: { ds: {
+            "bg": "#1A1A1A",
+            "surface": "#2D2D2D",
+            "primary": "#E8D5B7",
+            "secondary": "#8B7355",
+            "accent": "#C0392B",
+            "ink": "#F5F0E8",
+            "muted": "#8B7355",
+            "border": "#3D2B1F",
+            "focus": "#F39C12",
+            "error": "#E74C3C",
+            "success": "#27AE60",
+            "white": "#F5F0E8",
+            "texture": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grunge'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='6'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23grunge)' opacity='0.15'/%3E%3C/svg%3E\")"
+      } },
+      borderWidth: {
+            "ds": "2px"
+      },
+      boxShadow: {
+            "ds-default": "4px 4px 8px rgba(0,0,0,0.4)",
+            "ds-hover": "6px 6px 12px rgba(0,0,0,0.5)"
+      },
+      borderRadius: {
+            "ds-sm": "2px",
+            "ds-md": "4px",
+            "ds-lg": "8px",
+            "ds-irregular": "clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%)"
+      },
+      fontFamily: {
+            "heading": [
+                  "\"Oswald\", \"Bebas Neue\", sans-serif"
+            ],
+            "body": [
+                  "\"Courier New\", monospace"
+            ],
+            "mono": [
+                  "\"Courier New\", monospace"
+            ]
+      },
+      fontWeight: {
+            "ds-normal": 400,
+            "ds-bold": 700
+      },
+      transitionDuration: {
+            "ds": "200ms"
+      },
+      transitionTimingFunction: {
+            "ds": "ease-in"
+      }
+    }
+  }
+}

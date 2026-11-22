@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 3px;
+  --ds-border-color: #000000;
+  --ds-shadow-default: 6px 6px 0 #FF6B6B;
+  --ds-shadow-hover: 8px 8px 0 #4ECDC4;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 16px;
+  --ds-radius-xl: 50% 50% 0 0;
+  --ds-radius-blob: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  --ds-color-bg: #FFFFFF;
+  --ds-color-surface: #FFF5E6;
+  --ds-color-primary: #FF6B6B;
+  --ds-color-secondary: #4ECDC4;
+  --ds-color-accent: #FFE66D;
+  --ds-color-ink: #2D2D2D;
+  --ds-color-muted: #95A5A6;
+  --ds-color-border: #000000;
+  --ds-color-focus: #FF6B6B;
+  --ds-color-error: #E74C3C;
+  --ds-color-success: #2ECC71;
+  --ds-color-white: #FFFFFF;
+  --ds-color-shape1: #FF6B6B;
+  --ds-color-shape2: #4ECDC4;
+  --ds-color-shape3: #FFE66D;
+  --ds-color-shape4: #95E1D3;
+  --ds-color-shape5: #F38BA8;
+  --ds-color-shape6: #A8E6CF;
+  --ds-font-heading: "Permanent Marker", "Fredoka One", cursive;
+  --ds-font-body: "Nunito", sans-serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

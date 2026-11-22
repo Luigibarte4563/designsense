@@ -1,0 +1,33 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #FF00FF;
+  --ds-shadow-default: 0 0 20px rgba(255,0,255,0.3);
+  --ds-shadow-hover: 0 0 30px rgba(0,255,255,0.4);
+  --ds-shadow-glitch: 2px 0 0 #00FFFF, -2px 0 0 #FF00FF;
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #0A0A0F;
+  --ds-color-surface: #12121A;
+  --ds-color-primary: #FF00FF;
+  --ds-color-secondary: #00FFFF;
+  --ds-color-accent: #FFFF00;
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: #6B4E8C;
+  --ds-color-border: #FF00FF;
+  --ds-color-focus: #00FFFF;
+  --ds-color-error: #FF0044;
+  --ds-color-success: #00FF88;
+  --ds-color-white: #FFFFFF;
+  --ds-color-glitch1: #FF00FF;
+  --ds-color-glitch2: #00FFFF;
+  --ds-color-grid: rgba(255,0,255,0.1);
+  --ds-color-scanline: rgba(0,0,0,0.1);
+  --ds-font-heading: "Orbitron", "Rajdhani", sans-serif;
+  --ds-font-body: "JetBrains Mono", "Share Tech Mono", monospace;
+  --ds-font-mono: "JetBrains Mono", "Share Tech Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 150ms;
+  --ds-motion-easing: ease-out;
+}

@@ -1,0 +1,34 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #000000;
+  --ds-shadow-default: 4px 4px 0 #FF00FF;
+  --ds-shadow-hover: 6px 6px 0 #00FFFF;
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-radius-xl: 0px;
+  --ds-color-bg: #FFF8E7;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #FF006E;
+  --ds-color-secondary: #8338EC;
+  --ds-color-accent: #FFBE0B;
+  --ds-color-ink: #000000;
+  --ds-color-muted: #666666;
+  --ds-color-border: #000000;
+  --ds-color-focus: #3A86FF;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #06D6A0;
+  --ds-color-white: #FFFFFF;
+  --ds-color-pattern1: #FB5607;
+  --ds-color-pattern2: #FF006E;
+  --ds-color-pattern3: #8338EC;
+  --ds-color-pattern4: #3A86FF;
+  --ds-color-pattern5: #06D6A0;
+  --ds-font-heading: "Anton", "Bebas Neue", sans-serif;
+  --ds-font-body: "Space Mono", monospace;
+  --ds-font-mono: "Space Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: ease-out;
+}

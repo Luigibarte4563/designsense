@@ -1,0 +1,31 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #8B7355;
+  --ds-shadow-default: 3px 3px 0 #8B7355;
+  --ds-shadow-hover: 5px 5px 0 #8B7355;
+  --ds-radius-sm: 2px;
+  --ds-radius-md: 4px;
+  --ds-radius-lg: 8px;
+  --ds-color-bg: #F5F0E8;
+  --ds-color-surface: #FAF5ED;
+  --ds-color-primary: #8B4513;
+  --ds-color-secondary: #CD853F;
+  --ds-color-accent: #D2691E;
+  --ds-color-ink: #3D2B1F;
+  --ds-color-muted: #8B7355;
+  --ds-color-border: #8B7355;
+  --ds-color-focus: #CD853F;
+  --ds-color-error: #B22222;
+  --ds-color-success: #556B2F;
+  --ds-color-white: #FFF8F0;
+  --ds-color-sepia: #C9B896;
+  --ds-color-paper: #FDF8F0;
+  --ds-font-heading: "Playfair Display", "Georgia", serif;
+  --ds-font-body: "Cormorant Garamond", "Georgia", serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: ease-in-out;
+  --ds-texture-paper: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23paper)' opacity='0.08'/%3E%3C/svg%3E");
+}

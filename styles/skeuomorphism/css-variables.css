@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: rgba(0,0,0,0.2);
+  --ds-shadow-default: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+  --ds-shadow-hover: 0 6px 16px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+  --ds-shadow-active: inset 0 2px 6px rgba(0,0,0,0.3);
+  --ds-shadow-pressed: inset 0 3px 8px rgba(0,0,0,0.4);
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 16px;
+  --ds-radius-xl: 24px;
+  --ds-color-bg: linear-gradient(145deg, #E0E0E0 0%, #F5F5F5 50%, #E0E0E0 100%);
+  --ds-color-surface: linear-gradient(145deg, #FFFFFF 0%, #F0F0F0 100%);
+  --ds-color-primary: linear-gradient(145deg, #007AFF 0%, #0051D5 100%);
+  --ds-color-secondary: linear-gradient(145deg, #5856D6 0%, #3A38A0 100%);
+  --ds-color-accent: linear-gradient(145deg, #FF2D55 0%, #CC0033 100%);
+  --ds-color-ink: #1C1C1E;
+  --ds-color-muted: #8E8E93;
+  --ds-color-border: rgba(0,0,0,0.15);
+  --ds-color-focus: #007AFF;
+  --ds-color-error: #FF3B30;
+  --ds-color-success: #34C759;
+  --ds-color-white: #FFFFFF;
+  --ds-color-highlight: rgba(255,255,255,0.4);
+  --ds-color-shadow: rgba(0,0,0,0.3);
+  --ds-font-heading: "Helvetica Neue", Helvetica, sans-serif;
+  --ds-font-body: "Helvetica Neue", Helvetica, sans-serif;
+  --ds-font-mono: Menlo, monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ds-texture-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  --ds-texture-gloss: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 50%);
+}

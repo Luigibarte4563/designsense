@@ -1,0 +1,32 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #8B7355;
+  --ds-shadow-default: 2px 2px 8px rgba(0,0,0,0.2);
+  --ds-shadow-hover: 4px 4px 16px rgba(0,0,0,0.3);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 32px;
+  --ds-radius-organic: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  --ds-color-bg: #FDF6E3;
+  --ds-color-surface: #FFF8F0;
+  --ds-color-primary: #8B7355;
+  --ds-color-secondary: #556B2F;
+  --ds-color-accent: #CD853F;
+  --ds-color-ink: #3D2B1F;
+  --ds-color-muted: #A09078;
+  --ds-color-border: #D4C4A8;
+  --ds-color-focus: #8B7355;
+  --ds-color-error: #B22222;
+  --ds-color-success: #556B2F;
+  --ds-color-white: #FFFFFF;
+  --ds-color-floral: #D4A574;
+  --ds-color-vine: #556B2F;
+  --ds-color-cream: #FDF6E3;
+  --ds-font-heading: "Trajan Pro", "Optima", serif;
+  --ds-font-body: "Palatino", "Georgia", serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 500ms;
+  --ds-motion-easing: ease-in-out;
+}

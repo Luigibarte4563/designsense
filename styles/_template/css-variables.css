@@ -1,0 +1,26 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #000000;
+  --ds-shadow-default: 0 2px 4px rgba(0,0,0,0.1);
+  --ds-shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #FFFFFF;
+  --ds-color-surface: #FAFAFA;
+  --ds-color-primary: #0066CC;
+  --ds-color-secondary: #666666;
+  --ds-color-ink: #1A1A1A;
+  --ds-color-muted: #666666;
+  --ds-color-border: #E5E5E5;
+  --ds-color-focus: #0066CC;
+  --ds-color-error: #CC3300;
+  --ds-color-success: #00AA55;
+  --ds-font-heading: system-ui, sans-serif;
+  --ds-font-body: system-ui, sans-serif;
+  --ds-font-mono: monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: ease-out;
+}

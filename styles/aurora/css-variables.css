@@ -1,0 +1,37 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: rgba(255,255,255,0.2);
+  --ds-shadow-default: 0 4px 24px rgba(0,0,0,0.1);
+  --ds-shadow-hover: 0 8px 32px rgba(0,0,0,0.15);
+  --ds-shadow-glow: 0 0 60px rgba(100,100,255,0.3);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-radius-xl: 32px;
+  --ds-color-bg: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  --ds-color-surface: rgba(255,255,255,0.1);
+  --ds-color-surfaceStrong: rgba(255,255,255,0.15);
+  --ds-color-border: rgba(255,255,255,0.2);
+  --ds-color-primary: #FFFFFF;
+  --ds-color-secondary: rgba(255,255,255,0.9);
+  --ds-color-accent: #FFD700;
+  --ds-color-ink: #1A1A2E;
+  --ds-color-muted: rgba(255,255,255,0.7);
+  --ds-color-focus: #FFD700;
+  --ds-color-error: #FF6B6B;
+  --ds-color-success: #4ADE80;
+  --ds-color-white: #FFFFFF;
+  --ds-color-mesh1: rgba(102, 126, 234, 0.4);
+  --ds-color-mesh2: rgba(118, 75, 162, 0.4);
+  --ds-color-mesh3: rgba(240, 147, 251, 0.4);
+  --ds-font-heading: "Space Grotesk", "Inter", sans-serif;
+  --ds-font-body: "Inter", sans-serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-blur-default: 30px;
+  --ds-blur-mesh: 80px;
+}

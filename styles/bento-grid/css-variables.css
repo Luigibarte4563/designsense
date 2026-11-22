@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: rgba(0,0,0,0.08);
+  --ds-shadow-default: 0 2px 8px rgba(0,0,0,0.06);
+  --ds-shadow-hover: 0 8px 24px rgba(0,0,0,0.1);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 16px;
+  --ds-radius-xl: 24px;
+  --ds-color-bg: #F8F9FA;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #0066CC;
+  --ds-color-secondary: #6C757D;
+  --ds-color-accent: #FF6B35;
+  --ds-color-ink: #212529;
+  --ds-color-muted: #6C757D;
+  --ds-color-border: rgba(0,0,0,0.08);
+  --ds-color-focus: #0066CC;
+  --ds-color-error: #DC3545;
+  --ds-color-success: #28A745;
+  --ds-color-white: #FFFFFF;
+  --ds-color-tile1: #FFF8F0;
+  --ds-color-tile2: #F0F8FF;
+  --ds-color-tile3: #F5F5F5;
+  --ds-font-heading: "Inter", "SF Pro Display", sans-serif;
+  --ds-font-body: "Inter", "SF Pro Text", sans-serif;
+  --ds-font-mono: "SF Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-grid-columns: 4;
+  --ds-grid-gap: 16px;
+  --ds-grid-tileRatio: 1:1;
+}

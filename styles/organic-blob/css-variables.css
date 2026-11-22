@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 0 8px 32px rgba(0,0,0,0.1);
+  --ds-shadow-hover: 0 12px 40px rgba(0,0,0,0.15);
+  --ds-radius-sm: 24px 20px 28px 22px / 20px 24px 22px 28px;
+  --ds-radius-md: 32px 28px 36px 30px / 28px 32px 30px 36px;
+  --ds-radius-lg: 48px 40px 52px 44px / 40px 48px 44px 52px;
+  --ds-radius-blob: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  --ds-radius-morph1: 55% 45% 35% 65% / 55% 35% 65% 45%;
+  --ds-radius-morph2: 65% 35% 25% 75% / 65% 25% 75% 35%;
+  --ds-color-bg: #FEF7F0;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #FF8C42;
+  --ds-color-secondary: #6BCB77;
+  --ds-color-accent: #4ECDC4;
+  --ds-color-ink: #2D2D2D;
+  --ds-color-muted: #95A5A6;
+  --ds-color-border: transparent;
+  --ds-color-focus: #FF8C42;
+  --ds-color-error: #E74C3C;
+  --ds-color-success: #2ECC71;
+  --ds-color-white: #FFFFFF;
+  --ds-color-blob1: #FFE66D;
+  --ds-color-blob2: #95E1D3;
+  --ds-color-blob3: #F38BA8;
+  --ds-color-blob4: #A8E6CF;
+  --ds-font-heading: "Nunito", "Quicksand", sans-serif;
+  --ds-font-body: "Nunito", "Quicksand", sans-serif;
+  --ds-font-mono: "Fira Code", monospace;
+  --ds-font-weight-normal: 500;
+  --ds-font-weight-medium: 600;
+  --ds-font-weight-bold: 800;
+  --ds-motion-duration: 500ms;
+  --ds-motion-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+}

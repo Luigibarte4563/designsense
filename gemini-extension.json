@@ -1,0 +1,68 @@
+{
+  "name": "designsense",
+  "version": "0.1.0",
+  "description": "UI/UX principles and style plugin for AI coding agents",
+  "author": "designsense",
+  "license": "MIT",
+  "repository": "https://github.com/Luigibarte4563/designsense",
+  "entryPoint": "gemini-extension.js",
+  "commands": [
+    {
+      "name": "designsense",
+      "description": "Set principles level (lite|full|strict)",
+      "args": [
+        { "name": "level", "type": "string", "description": "lite, full, or strict", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-review",
+      "description": "Review current diff for UI/UX issues",
+      "args": []
+    },
+    {
+      "name": "designsense-audit",
+      "description": "Audit repo or page for UI/UX issues",
+      "args": [
+        { "name": "path", "type": "string", "description": "Path to audit", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-a11y",
+      "description": "Focused accessibility scan",
+      "args": [
+        { "name": "path", "type": "string", "description": "Path to scan", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-tokens",
+      "description": "Extract hardcoded values to token file",
+      "args": [
+        { "name": "path", "type": "string", "description": "Path to scan", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-states",
+      "description": "Find missing loading/empty/error states",
+      "args": [
+        { "name": "path", "type": "string", "description": "Path to scan", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-style",
+      "description": "Manage visual styles",
+      "args": [
+        { "name": "action", "type": "string", "description": "list|set|mix|off|preview|convert|create", "required": false },
+        { "name": "style", "type": "string", "description": "Style name", "required": false }
+      ]
+    },
+    {
+      "name": "designsense-help",
+      "description": "Show all commands and rules",
+      "args": []
+    }
+  ],
+  "hooks": {
+    "onUserPrompt": "gemini-extension.js#injectRules",
+    "onToolUse": "gemini-extension.js#postEditCheck"
+  }
+}

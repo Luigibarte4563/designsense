@@ -1,0 +1,38 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #FFB3D9;
+  --ds-shadow-default: 0 4px 12px rgba(255,179,217,0.3);
+  --ds-shadow-hover: 0 6px 16px rgba(255,179,217,0.4);
+  --ds-radius-sm: 16px;
+  --ds-radius-md: 24px;
+  --ds-radius-lg: 32px;
+  --ds-radius-xl: 48px;
+  --ds-radius-pill: 9999px;
+  --ds-color-bg: #FFF0F5;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #FF69B4;
+  --ds-color-secondary: #87CEEB;
+  --ds-color-accent: #FFD700;
+  --ds-color-ink: #4A4A4A;
+  --ds-color-muted: #FFB3D9;
+  --ds-color-border: #FFB3D9;
+  --ds-color-focus: #FF69B4;
+  --ds-color-error: #FF4466;
+  --ds-color-success: #88DD88;
+  --ds-color-white: #FFFFFF;
+  --ds-color-pastel1: #FFB3D9;
+  --ds-color-pastel2: #B3D9FF;
+  --ds-color-pastel3: #D9FFB3;
+  --ds-color-pastel4: #FFF3B3;
+  --ds-color-pastel5: #E6B3FF;
+  --ds-color-pastel6: #FFD9B3;
+  --ds-color-character: #FF69B4;
+  --ds-font-heading: "Nunito", "Quicksand", "Fredoka One", sans-serif;
+  --ds-font-body: "Nunito", "Quicksand", sans-serif;
+  --ds-font-mono: "Fira Code", monospace;
+  --ds-font-weight-normal: 500;
+  --ds-font-weight-medium: 600;
+  --ds-font-weight-bold: 800;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+}

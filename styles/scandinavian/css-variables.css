@@ -1,0 +1,32 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #E8E4DD;
+  --ds-shadow-default: 0 2px 8px rgba(0,0,0,0.04);
+  --ds-shadow-hover: 0 4px 16px rgba(0,0,0,0.06);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #FDFBF7;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #2D4A3E;
+  --ds-color-secondary: #8B9A8C;
+  --ds-color-accent: #D4A574;
+  --ds-color-ink: #1A1A1A;
+  --ds-color-muted: #8B9A8C;
+  --ds-color-border: #E8E4DD;
+  --ds-color-focus: #2D4A3E;
+  --ds-color-error: #C0392B;
+  --ds-color-success: #2D4A3E;
+  --ds-color-white: #FFFFFF;
+  --ds-color-wood: #C9B896;
+  --ds-color-stone: #A8A8A0;
+  --ds-color-linen: #F5F0E8;
+  --ds-font-heading: "IBM Plex Sans", "Inter", sans-serif;
+  --ds-font-body: "IBM Plex Sans", "Inter", sans-serif;
+  --ds-font-mono: "IBM Plex Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 250ms;
+  --ds-motion-easing: ease-out;
+}

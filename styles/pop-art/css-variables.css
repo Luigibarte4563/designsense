@@ -1,0 +1,32 @@
+:root {
+  --ds-border-width: 4px;
+  --ds-border-color: #000000;
+  --ds-shadow-default: 6px 6px 0 #000000;
+  --ds-shadow-hover: 8px 8px 0 #000000;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 4px;
+  --ds-radius-lg: 8px;
+  --ds-radius-bubble: 20px 20px 20px 0;
+  --ds-color-bg: #FFFFFF;
+  --ds-color-surface: #FFFF00;
+  --ds-color-primary: #FF0000;
+  --ds-color-secondary: #0000FF;
+  --ds-color-accent: #FFFF00;
+  --ds-color-ink: #000000;
+  --ds-color-muted: #666666;
+  --ds-color-border: #000000;
+  --ds-color-focus: #FF0000;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #00FF00;
+  --ds-color-white: #FFFFFF;
+  --ds-color-halftone: rgba(0,0,0,0.15);
+  --ds-color-bubble: #FFFFFF;
+  --ds-color-bubbleBorder: #000000;
+  --ds-font-heading: "Bangers", "Anton", sans-serif;
+  --ds-font-body: "Comic Neue", cursive;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 150ms;
+  --ds-motion-easing: steps(3);
+}

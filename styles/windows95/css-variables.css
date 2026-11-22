@@ -1,0 +1,38 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #FFFFFF;
+  --ds-shadow-raised: 1px 1px 0 #FFFFFF, 2px 2px 0 #DFDFDF, -1px -1px 0 #808080, -2px -2px 0 #000000;
+  --ds-shadow-sunken: 1px 1px 0 #000000, 2px 2px 0 #808080, -1px -1px 0 #DFDFDF, -2px -2px 0 #FFFFFF;
+  --ds-shadow-default: none;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 0px;
+  --ds-radius-lg: 0px;
+  --ds-color-bg: #008080;
+  --ds-color-surface: #C0C0C0;
+  --ds-color-windowBg: #C0C0C0;
+  --ds-color-titleBar: linear-gradient(90deg, #000080 0%, #1084D0 100%);
+  --ds-color-titleBarInactive: #808080;
+  --ds-color-primary: #000000;
+  --ds-color-secondary: #000080;
+  --ds-color-accent: #FF0000;
+  --ds-color-ink: #000000;
+  --ds-color-muted: #808080;
+  --ds-color-border: #FFFFFF;
+  --ds-color-focus: #000080;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #008000;
+  --ds-color-white: #FFFFFF;
+  --ds-color-highlight: #000080;
+  --ds-color-highlightText: #FFFFFF;
+  --ds-color-buttonFace: #C0C0C0;
+  --ds-color-buttonHighlight: #FFFFFF;
+  --ds-color-buttonShadow: #808080;
+  --ds-color-buttonDkShadow: #000000;
+  --ds-font-heading: "MS Sans Serif", "Tahoma", sans-serif;
+  --ds-font-body: "MS Sans Serif", "Tahoma", sans-serif;
+  --ds-font-mono: "Fixedsys", "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 0ms;
+  --ds-motion-easing: linear;
+}

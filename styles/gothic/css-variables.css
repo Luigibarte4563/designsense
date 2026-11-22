@@ -1,0 +1,33 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #8B0000;
+  --ds-shadow-default: 0 4px 20px rgba(0,0,0,0.5);
+  --ds-shadow-hover: 0 8px 30px rgba(139,0,0,0.3);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 16px;
+  --ds-radius-arch: 50% 50% 0 0;
+  --ds-color-bg: #0D0D0D;
+  --ds-color-surface: #1A0A0A;
+  --ds-color-primary: #8B0000;
+  --ds-color-secondary: #4A0A0A;
+  --ds-color-accent: #D4AF37;
+  --ds-color-ink: #F5F0E8;
+  --ds-color-muted: #8B4A4A;
+  --ds-color-border: #4A0A0A;
+  --ds-color-focus: #D4AF37;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #2E8B57;
+  --ds-color-white: #F5F0E8;
+  --ds-color-blood: #8B0000;
+  --ds-color-gold: #D4AF37;
+  --ds-color-stone: #2A2A2A;
+  --ds-color-velvet: #1A0A0A;
+  --ds-font-heading: "Cinzel", "Trajan Pro", "Old English Text MT", serif;
+  --ds-font-body: "Crimson Text", "Garamond", serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 500ms;
+  --ds-motion-easing: ease-in-out;
+}

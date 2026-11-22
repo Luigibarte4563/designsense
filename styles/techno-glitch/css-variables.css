@@ -1,0 +1,32 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #FF00FF;
+  --ds-shadow-default: 0 0 10px rgba(255,0,255,0.3);
+  --ds-shadow-hover: 0 0 20px rgba(0,255,255,0.4);
+  --ds-shadow-glitch: 3px 0 0 #00FFFF, -3px 0 0 #FF00FF;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 4px;
+  --ds-radius-lg: 8px;
+  --ds-color-bg: #000000;
+  --ds-color-surface: #0A0A0A;
+  --ds-color-primary: #FF00FF;
+  --ds-color-secondary: #00FFFF;
+  --ds-color-accent: #FFFF00;
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: #444444;
+  --ds-color-border: #FF00FF;
+  --ds-color-focus: #00FFFF;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #00FF00;
+  --ds-color-white: #FFFFFF;
+  --ds-color-noise: rgba(255,255,255,0.02);
+  --ds-color-scanline: rgba(0,0,0,0.1);
+  --ds-color-rgbShift: rgba(255,0,255,0.5);
+  --ds-font-heading: "JetBrains Mono", "Share Tech Mono", monospace;
+  --ds-font-body: "JetBrains Mono", "Share Tech Mono", monospace;
+  --ds-font-mono: "JetBrains Mono", "Share Tech Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 50ms;
+  --ds-motion-easing: steps(2);
+}

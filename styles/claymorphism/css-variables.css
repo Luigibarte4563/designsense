@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 12px 12px 24px #C5CAD8, -12px -12px 24px #FFFFFF;
+  --ds-shadow-hover: 16px 16px 32px #C5CAD8, -16px -16px 32px #FFFFFF;
+  --ds-shadow-active: inset 6px 6px 12px #C5CAD8, inset -6px -6px 12px #FFFFFF;
+  --ds-shadow-inner: inset 8px 8px 16px #C5CAD8, inset -8px -8px 16px #FFFFFF;
+  --ds-shadow-float: 20px 20px 40px #C5CAD8, -20px -20px 40px #FFFFFF;
+  --ds-radius-sm: 20px;
+  --ds-radius-md: 32px;
+  --ds-radius-lg: 48px;
+  --ds-radius-xl: 64px;
+  --ds-radius-pill: 9999px;
+  --ds-color-bg: #E0E5EC;
+  --ds-color-surface: #E0E5EC;
+  --ds-color-primary: #7C8DB5;
+  --ds-color-secondary: #A3B1C6;
+  --ds-color-accent: #FF8A8A;
+  --ds-color-ink: #2D3748;
+  --ds-color-muted: #8A9BB8;
+  --ds-color-border: transparent;
+  --ds-color-focus: #4299E1;
+  --ds-color-error: #E53E3E;
+  --ds-color-success: #38A169;
+  --ds-color-white: #FFFFFF;
+  --ds-color-shadowDark: #C5CAD8;
+  --ds-color-shadowLight: #FFFFFF;
+  --ds-font-heading: "Nunito", "Quicksand", sans-serif;
+  --ds-font-body: "Nunito", "Quicksand", sans-serif;
+  --ds-font-mono: "Fira Code", monospace;
+  --ds-font-weight-normal: 500;
+  --ds-font-weight-medium: 600;
+  --ds-font-weight-bold: 800;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+}

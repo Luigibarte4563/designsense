@@ -1,0 +1,36 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 0 8px 32px rgba(0,0,0,0.12);
+  --ds-shadow-hover: 0 12px 40px rgba(0,0,0,0.16);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-color-bg: #FAFAFA;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #1E3A5F;
+  --ds-color-secondary: #4A5568;
+  --ds-color-accent: #ECC94B;
+  --ds-color-ink: #1A202C;
+  --ds-color-muted: #718096;
+  --ds-color-border: #E2E8F0;
+  --ds-color-focus: #3182CE;
+  --ds-color-error: #E53E3E;
+  --ds-color-success: #38A169;
+  --ds-color-white: #FFFFFF;
+  --ds-color-layer1: #FFFFFF;
+  --ds-color-layer2: #F7FAFC;
+  --ds-color-layer3: #EDF2F7;
+  --ds-color-layer4: #E2E8F0;
+  --ds-font-heading: "Playfair Display", "Georgia", serif;
+  --ds-font-body: "Inter", "Source Serif Pro", serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 600ms;
+  --ds-motion-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ds-motion-parallaxSpeed-slow: 0.3;
+  --ds-motion-parallaxSpeed-medium: 0.5;
+  --ds-motion-parallaxSpeed-fast: 0.8;
+}

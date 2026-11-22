@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: rgba(255,255,255,0.1);
+  --ds-shadow-default: 0 0 40px rgba(100,100,255,0.2);
+  --ds-shadow-hover: 0 0 60px rgba(255,100,255,0.3);
+  --ds-shadow-glow: 0 0 80px rgba(100,100,255,0.4);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-radius-xl: 48px;
+  --ds-color-bg: linear-gradient(180deg, #050510 0%, #100520 50%, #051020 100%);
+  --ds-color-surface: rgba(20,20,40,0.6);
+  --ds-color-primary: #6688FF;
+  --ds-color-secondary: #FF66AA;
+  --ds-color-accent: #FFAA00;
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: #666688;
+  --ds-color-border: rgba(255,255,255,0.1);
+  --ds-color-focus: #FF66AA;
+  --ds-color-error: #FF4466;
+  --ds-color-success: #44FF88;
+  --ds-color-white: #FFFFFF;
+  --ds-color-star: #FFFFFF;
+  --ds-color-nebula1: rgba(102,136,255,0.3);
+  --ds-color-nebula2: rgba(255,102,170,0.3);
+  --ds-color-nebula3: rgba(255,170,0,0.3);
+  --ds-font-heading: "Orbitron", "Exo 2", sans-serif;
+  --ds-font-body: "Inter", "Exo 2", sans-serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-light: 300;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 600ms;
+  --ds-motion-easing: ease-in-out;
+}

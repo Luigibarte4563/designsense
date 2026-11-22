@@ -1,0 +1,113 @@
+{
+  "name": "designsense",
+  "displayName": "designsense",
+  "description": "UI/UX principles and style plugin for AI coding agents. Enforces accessibility, interaction states, design consistency, and visual styles (neobrutalism, glassmorphism, minimalism).",
+  "version": "0.1.0",
+  "author": "designsense",
+  "license": "MIT",
+  "repository": "https://github.com/Luigibarte4563/designsense",
+  "homepage": "https://github.com/Luigibarte4563/designsense#readme",
+  "keywords": [
+    "ui",
+    "ux",
+    "design-system",
+    "accessibility",
+    "design-tokens",
+    "neobrutalism",
+    "glassmorphism",
+    "minimalism",
+    "wcag",
+    "frontend"
+  ],
+  "categories": [
+    "Development Tools",
+    "Design",
+    "Accessibility"
+  ],
+  "icon": "icon.png",
+  "screenshots": [
+    "screenshots/neobrutalism.png",
+    "screenshots/glassmorphism.png",
+    "screenshots/minimalism.png"
+  ],
+  "publisher": "designsense",
+  "engines": {
+    "claude": ">=1.0.0"
+  },
+  "activationEvents": [
+    "onStartup"
+  ],
+  "main": "./hooks/inject-rules.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "designsense",
+        "title": "designsense: Set Principles Level",
+        "description": "Set UI/UX principles level (lite|full|strict)"
+      },
+      {
+        "command": "designsense-review",
+        "title": "designsense: Review Current Diff",
+        "description": "Review current git diff for UI/UX issues"
+      },
+      {
+        "command": "designsense-audit",
+        "title": "designsense: Audit Repository",
+        "description": "Full repository audit for UI/UX issues"
+      },
+      {
+        "command": "designsense-a11y",
+        "title": "designsense: Accessibility Scan",
+        "description": "Focused accessibility scan"
+      },
+      {
+        "command": "designsense-tokens",
+        "title": "designsense: Extract Tokens",
+        "description": "Extract hardcoded values to design token file"
+      },
+      {
+        "command": "designsense-states",
+        "title": "designsense: Check States",
+        "description": "Find components missing loading/empty/error states"
+      },
+      {
+        "command": "designsense-style",
+        "title": "designsense: Manage Styles",
+        "description": "List, activate, or preview visual styles"
+      },
+      {
+        "command": "designsense-help",
+        "title": "designsense: Help",
+        "description": "Show all commands and rules"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "designsense",
+      "properties": {
+        "designsense.mode": {
+          "type": "string",
+          "enum": ["lite", "full", "strict"],
+          "default": "full",
+          "description": "Principles enforcement level"
+        },
+        "designsense.style": {
+          "type": "string",
+          "enum": ["neobrutalism", "glassmorphism", "minimalism", "none"],
+          "default": "neobrutalism",
+          "description": "Active visual style preset"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "install": "node scripts/install.js",
+    "uninstall": "node scripts/uninstall.js"
+  },
+  "dependencies": {
+    "axe-core": "^4.8.0"
+  },
+  "devDependencies": {
+    "promptfoo": "^0.50.0"
+  }
+}

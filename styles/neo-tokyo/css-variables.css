@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #FF0080;
+  --ds-shadow-default: 0 0 20px rgba(255,0,128,0.4);
+  --ds-shadow-hover: 0 0 30px rgba(0,255,255,0.5);
+  --ds-shadow-speed: 8px 0 0 #00FFFF, -8px 0 0 #FF0080;
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-radius-sharp: 0px;
+  --ds-color-bg: #0A0A1A;
+  --ds-color-surface: #12122A;
+  --ds-color-primary: #FF0080;
+  --ds-color-secondary: #00FFFF;
+  --ds-color-accent: #FFFF00;
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: #8844AA;
+  --ds-color-border: #FF0080;
+  --ds-color-focus: #00FFFF;
+  --ds-color-error: #FF0044;
+  --ds-color-success: #00FF88;
+  --ds-color-white: #FFFFFF;
+  --ds-color-speed: #FF0080;
+  --ds-color-neon: #00FFFF;
+  --ds-color-warning: #FFAA00;
+  --ds-color-manga: #FF0080;
+  --ds-font-heading: "Noto Sans JP", "Orbitron", sans-serif;
+  --ds-font-body: "Noto Sans JP", "Inter", sans-serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-font-weight-black: 900;
+  --ds-motion-duration: 150ms;
+  --ds-motion-easing: ease-out;
+}

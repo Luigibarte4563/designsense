@@ -1,0 +1,31 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #FF00FF;
+  --ds-shadow-default: 0 0 20px rgba(255,0,255,0.5);
+  --ds-shadow-hover: 0 0 30px rgba(0,255,255,0.6);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: linear-gradient(180deg, #1A002E 0%, #16213E 50%, #0F3460 100%);
+  --ds-color-surface: rgba(255,255,255,0.03);
+  --ds-color-primary: #FF00FF;
+  --ds-color-secondary: #00FFFF;
+  --ds-color-accent: #FFD700;
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: #8A2BE2;
+  --ds-color-border: #FF00FF;
+  --ds-color-focus: #00FFFF;
+  --ds-color-error: #FF0000;
+  --ds-color-success: #00FF00;
+  --ds-color-white: #FFFFFF;
+  --ds-color-grid: rgba(255,0,255,0.15);
+  --ds-color-sun: #FF6600;
+  --ds-color-palm: #0F3460;
+  --ds-font-heading: "Orbitron", "Rajdhani", sans-serif;
+  --ds-font-body: "Share Tech Mono", monospace;
+  --ds-font-mono: "Share Tech Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 400ms;
+  --ds-motion-easing: ease-in-out;
+}

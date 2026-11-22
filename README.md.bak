@@ -1,0 +1,217 @@
+# designsense
+
+> UI/UX principles and style plugin for AI coding agents. Write accessible, consistent front-end code — every time.
+
+## Why designsense?
+
+AI agents generate working code but often miss:
+- **Accessibility** (contrast, focus, labels, keyboard nav)
+- **Interaction states** (loading, empty, error, disabled)
+- **Design consistency** (magic numbers, hardcoded colors, spacing)
+- **Responsive behavior** (mobile-first, fluid layouts)
+
+designsense adds **always-on rules** + **optional visual styles** so agents produce production-ready UI by default.
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| **5 Principle Pillars** | Hierarchy, Heuristics, A11y, States, Responsiveness |
+| **3 Levels** | `lite` (A11y only), `full` (all pillars), `strict` (enforce tokens) |
+| **Style Presets** | Neobrutalism, Glassmorphism, Minimalism (+ more coming) |
+| **Deterministic Checks** | Contrast, A11y scan, Smell lint, Style fidelity |
+| **Token-First** | Design tokens → framework output (Tailwind, CSS, CSS-in-JS, shadcn) |
+| **Multi-Agent** | Claude Code, Codex, Gemini, OpenCode, Kiro |
+
+## Quick Start
+
+### Install (Claude Code)
+```bash
+# From marketplace
+/plugin marketplace add yourname/designsense
+/plugin install designsense@designsense
+
+# Or manual
+cp -r designsense/.claude-plugin ~/.claude/plugins/designsense
+```
+
+### Configure
+```bash
+# Project config (commits with repo for team consistency)
+mkdir -p .designsense
+cat > .designsense/style.json <<EOF
+{ "level": "full", "style": "neobrutalism" }
+EOF
+
+# Or env vars
+export DESIGNSENSE_MODE=full
+export DESIGNSENSE_STYLE=neobrutalism
+```
+
+### Use
+```bash
+# Set level
+/designsense full
+
+# Review current diff
+/designsense-review
+
+# Audit whole repo
+/designsense-audit
+
+# Switch style
+/designsense-style glassmorphism
+
+# Preview style
+/designsense-style-preview
+```
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/designsense [lite\|full\|strict]` | Set principles level |
+| `/designsense-review` | Review diff → severity-ranked fixes |
+| `/designsense-audit [path]` | Full repo/page audit |
+| `/designsense-a11y [path]` | Focused accessibility pass |
+| `/designsense-tokens [path]` | Extract hardcoded values → token file |
+| `/designsense-states [path]` | Find missing loading/empty/error states |
+| `/designsense-style` | List styles |
+| `/designsense-style <name>` | Activate style |
+| `/designsense-style mix <a>+<b>` | Blend primary + accent |
+| `/designsense-style off` | Principles only |
+| `/designsense-style-preview` | Generate HTML showcase |
+| `/designsense-help` | Show this reference |
+
+## Style Presets
+
+### Neobrutalism
+Thick black borders, hard offset shadows, saturated flat colors, bold type.
+```json
+{ "border": "3px #000", "shadow": "4px 4px 0 #000", "radius": "0-4px" }
+```
+
+### Glassmorphism
+Translucent panels, backdrop blur, light borders, gradient backgrounds.
+```json
+{ "bg": "rgba(255,255,255,0.1)", "blur": "16px", "border": "1px rgba(255,255,255,0.18)" }
+```
+
+### Minimalism
+Whitespace, restrained palette, content first, no decoration.
+```json
+{ "border": "1px #E5E5E5", "shadow": "none", "radius": "4-8px" }
+```
+
+## Non-Negotiables (Every Level, Every Style)
+
+- ✅ Contrast ≥ 4.5:1 (text), 3:1 (UI)
+- ✅ Visible focus ring on every interactive element
+- ✅ Semantic HTML, labels on inputs
+- ✅ 44×44px touch targets
+- ✅ Loading / empty / error states on async UI
+- ✅ `prefers-reduced-motion` respected
+- ✅ No `outline: none` without replacement
+- ✅ No click handlers on `<div>`/`<span>` without role+tabindex
+
+## How It Works
+
+### 1. Hook Injection
+`UserPromptSubmit` hook loads core rules + active style's STYLE.md into context.
+
+### 2. Token-First Generation
+Agent defines tokens first, builds components from tokens.
+
+### 3. Lint on Edit
+`PostToolUse` hook runs smell-lint + style-fidelity after UI file edits.
+
+### 4. On-Demand Review
+`/designsense-review` runs full check suite on current diff.
+
+### 5. Style Switching
+Change tokens, not components. `/designsense-style glassmorphism` updates config; components auto-adapt.
+
+## Framework Output
+
+| Framework | Integration |
+|-----------|-------------|
+| **Tailwind** | Preset config + utility classes (`ds-btn`, `ds-card`) |
+| **Plain CSS** | CSS variables (`--ds-color-primary`, `--ds-shadow-default`) |
+| **CSS Modules** | Import CSS variables, use in modules |
+| **Styled Components** | Theme object from tokens |
+| **Emotion** | Theme object from tokens |
+| **Stitches** | Theme config from tokens |
+| **Panda CSS** | Token config from tokens |
+| **shadcn/ui** | Theme override from tokens |
+| **MUI/Chakra** | Theme override from tokens |
+
+## Project Structure
+
+```
+designsense/
+├── .claude-plugin/          # Claude Code plugin
+│   ├── plugin.json
+│   ├── hooks/               # inject-rules.js, post-edit-check.js
+│   ├── commands/            # designsense-*.js
+│   └── skills/              # SKILL.md files
+├── styles/
+│   ├── _template/           # Style template
+│   ├── neobrutalism/        # STYLE.md, tokens.json, css-variables.css, tailwind.preset.js
+│   ├── glassmorphism/
+│   └── minimalism/
+├── scripts/                 # contrast-check.js, a11y-scan.js, smell-lint.js, style-fidelity.js
+├── references/              # heuristics.md, wcag-checklist.md, component-patterns.md, stack-notes/
+├── benchmarks/              # promptfooconfig.yaml
+└── README.md
+```
+
+## Creating Custom Styles
+
+```bash
+/designsense-style-create
+# Guided wizard:
+# 1. Name your style
+# 2. Choose base traits (borders, shadows, radius, colors)
+# 3. Define tokens interactively
+# 4. Generates styles/your-style/ with all formats
+```
+
+Or manually:
+```bash
+cp -r styles/_template styles/my-style
+# Edit STYLE.md, tokens.json, css-variables.css, tailwind.preset.js
+```
+
+## Config Priority
+1. Env vars: `DESIGNSENSE_MODE`, `DESIGNSENSE_STYLE`
+2. User config: `~/.config/designsense/config.json`
+3. Project config: `.designsense/style.json` (commit for team sync)
+
+## Benchmarks
+
+```bash
+# Run promptfoo benchmarks
+cd benchmarks
+npx promptfoo eval -c promptfooconfig.yaml
+```
+
+Metrics measured:
+- Axe violations (should be 0)
+- States covered (loading/empty/error)
+- Tokens vs hardcoded values ratio
+- Keyboard operability
+- Style fidelity score
+- Files changed when switching styles (fewer = better)
+- Token/time overhead
+
+## Contributing
+
+1. Add style preset in `styles/new-style/`
+2. Run contrast check: `node scripts/contrast-check.js new-style`
+3. Run style fidelity: `node scripts/style-fidelity.js new-style`
+4. Add benchmark prompts in `benchmarks/prompts/`
+5. Submit PR
+
+## License
+
+MIT

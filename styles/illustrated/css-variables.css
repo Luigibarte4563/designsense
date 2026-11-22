@@ -1,0 +1,33 @@
+:root {
+  --ds-border-width: 2px;
+  --ds-border-color: #E8D5B7;
+  --ds-shadow-default: 0 4px 16px rgba(0,0,0,0.08);
+  --ds-shadow-hover: 0 8px 24px rgba(0,0,0,0.12);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-radius-xl: 32px;
+  --ds-color-bg: #FDFBF7;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #8B4513;
+  --ds-color-secondary: #556B2F;
+  --ds-color-accent: #CD853F;
+  --ds-color-ink: #3D2B1F;
+  --ds-color-muted: #A09078;
+  --ds-color-border: #E8D5B7;
+  --ds-color-focus: #8B4513;
+  --ds-color-error: #B22222;
+  --ds-color-success: #556B2F;
+  --ds-color-white: #FFFFFF;
+  --ds-color-illustration: #F5E6D3;
+  --ds-color-character: #D4A574;
+  --ds-color-nature: #556B2F;
+  --ds-font-heading: "Merriweather", "Georgia", serif;
+  --ds-font-body: "Nunito", "Quicksand", sans-serif;
+  --ds-font-mono: "Courier New", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 400ms;
+  --ds-motion-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+}

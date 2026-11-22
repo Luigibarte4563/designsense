@@ -1,0 +1,35 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 4px 4px 8px rgba(0,0,0,0.15), 8px 8px 16px rgba(0,0,0,0.1), 12px 12px 24px rgba(0,0,0,0.05);
+  --ds-shadow-hover: 6px 6px 12px rgba(0,0,0,0.2), 12px 12px 24px rgba(0,0,0,0.15), 18px 18px 36px rgba(0,0,0,0.1);
+  --ds-shadow-iso: 10px 10px 20px rgba(0,0,0,0.2), 20px 20px 40px rgba(0,0,0,0.15);
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-color-bg: #F0F4F8;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-top: #FFFFFF;
+  --ds-color-side: #E0E8F0;
+  --ds-color-darkSide: #C0D0E0;
+  --ds-color-primary: #4A90E2;
+  --ds-color-secondary: #7ED321;
+  --ds-color-accent: #F5A623;
+  --ds-color-ink: #2D3E50;
+  --ds-color-muted: #8A9BA8;
+  --ds-color-border: #D0D8E0;
+  --ds-color-focus: #4A90E2;
+  --ds-color-error: #D0021B;
+  --ds-color-success: #7ED321;
+  --ds-color-white: #FFFFFF;
+  --ds-color-ground: #E0E8F0;
+  --ds-color-grid: rgba(74,144,226,0.1);
+  --ds-font-heading: "Inter", "SF Pro Display", sans-serif;
+  --ds-font-body: "Inter", "SF Pro Text", sans-serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}

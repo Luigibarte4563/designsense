@@ -1,0 +1,31 @@
+:root {
+  --ds-border-width: 1px;
+  --ds-border-color: #27272A;
+  --ds-shadow-default: 0 4px 16px rgba(0,0,0,0.5);
+  --ds-shadow-hover: 0 8px 24px rgba(0,0,0,0.6);
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 10px;
+  --ds-radius-lg: 14px;
+  --ds-color-bg: #000000;
+  --ds-color-surface: #09090B;
+  --ds-color-surfaceHover: #18181B;
+  --ds-color-primary: #A5F3FC;
+  --ds-color-secondary: #E9D5FF;
+  --ds-color-accent: #FDE68A;
+  --ds-color-ink: #FAFAFA;
+  --ds-color-muted: #71717A;
+  --ds-color-border: #27272A;
+  --ds-color-focus: #A5F3FC;
+  --ds-color-error: #FCA5A5;
+  --ds-color-success: #86EFAC;
+  --ds-color-white: #FFFFFF;
+  --ds-color-elevated: #18181B;
+  --ds-font-heading: "Inter", "SF Pro Display", sans-serif;
+  --ds-font-body: "Inter", "SF Pro Text", sans-serif;
+  --ds-font-mono: "SF Mono", "JetBrains Mono", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 600;
+  --ds-motion-duration: 200ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}

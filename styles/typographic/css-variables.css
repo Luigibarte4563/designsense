@@ -1,0 +1,37 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: none;
+  --ds-shadow-hover: none;
+  --ds-radius-sm: 0px;
+  --ds-radius-md: 0px;
+  --ds-radius-lg: 0px;
+  --ds-color-bg: #FFFFFF;
+  --ds-color-surface: #FFFFFF;
+  --ds-color-primary: #000000;
+  --ds-color-secondary: #666666;
+  --ds-color-accent: #000000;
+  --ds-color-ink: #000000;
+  --ds-color-muted: #999999;
+  --ds-color-border: #E0E0E0;
+  --ds-color-focus: #000000;
+  --ds-color-error: #CC0000;
+  --ds-color-success: #008000;
+  --ds-color-white: #FFFFFF;
+  --ds-font-heading: "Playfair Display", "Georgia", serif;
+  --ds-font-body: "Source Serif Pro", "Georgia", serif;
+  --ds-font-mono: "JetBrains Mono", monospace;
+  --ds-font-weight-light: 300;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-bold: 700;
+  --ds-font-scale-xs: 0.75rem;
+  --ds-font-scale-sm: 1rem;
+  --ds-font-scale-base: 1.25rem;
+  --ds-font-scale-lg: 2rem;
+  --ds-font-scale-xl: 3.5rem;
+  --ds-font-scale-xxl: 6rem;
+  --ds-font-scale-xxxl: 10rem;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: ease-out;
+}

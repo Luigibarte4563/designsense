@@ -1,0 +1,33 @@
+:root {
+  --ds-border-width: 0px;
+  --ds-border-color: transparent;
+  --ds-shadow-default: 0 4px 20px rgba(0,0,0,0.15);
+  --ds-shadow-hover: 0 8px 30px rgba(0,0,0,0.2);
+  --ds-shadow-glow: 0 0 40px rgba(255,100,100,0.4);
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 16px;
+  --ds-radius-lg: 24px;
+  --ds-radius-xl: 32px;
+  --ds-color-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --ds-color-surface: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+  --ds-color-primary: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%);
+  --ds-color-secondary: linear-gradient(135deg, #6BCB77 0%, #43E97B 100%);
+  --ds-color-accent: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+  --ds-color-ink: #FFFFFF;
+  --ds-color-muted: rgba(255,255,255,0.8);
+  --ds-color-border: rgba(255,255,255,0.3);
+  --ds-color-focus: #FFD700;
+  --ds-color-error: #FF6B6B;
+  --ds-color-success: #4ADE80;
+  --ds-color-white: #FFFFFF;
+  --ds-color-duotone1: #667eea;
+  --ds-color-duotone2: #764ba2;
+  --ds-font-heading: "Poppins", "Inter", sans-serif;
+  --ds-font-body: "Inter", sans-serif;
+  --ds-font-mono: "Fira Code", monospace;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 600;
+  --ds-font-weight-bold: 700;
+  --ds-motion-duration: 300ms;
+  --ds-motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
