@@ -140,6 +140,11 @@ export DESIGNSENSE_STYLE=neobrutalism
 | `/designsense-style-preview` | Generate HTML showcase |
 | `/designsense-help` | Show this reference |
 
+**Invocation by agent:**
+- **OpenCode / Gemini CLI:** `/designsense-review` (exact names above)
+- **Claude Code:** namespaced as `/designsense:designsense-review`, `/designsense:designsense-style`, etc.
+- **Kiro / Codex / Cursor / Windsurf:** no slash commands; the rules are always in context via `designsense.md` / `AGENTS.md`
+
 ## Style Presets (59 Total)
 
 Run `/designsense-style` to list all available styles.

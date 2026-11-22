@@ -59,6 +59,15 @@ function main() {
     }
   }
 
+  const cmdDir = path.join(HOME, '.config', 'opencode', 'commands');
+  if ((!only || only === 'opencode') && fs.existsSync(cmdDir)) {
+    for (const file of fs.readdirSync(cmdDir).filter(f => f.startsWith('designsense') && f.endsWith('.md'))) {
+      const target = path.join(cmdDir, file);
+      log(`OpenCode command: ${target}`, 'step');
+      if (remove(target, dry)) log('Removed', dry ? 'dry' : 'success');
+    }
+  }
+
   const config = path.join(ROOT, '.designsense', 'style.json');
   if (!only && fs.existsSync(config)) {
     log(`Project config: ${config}`, 'step');

@@ -10,16 +10,6 @@
     "UserPromptSubmit": ".claude-plugin/hooks/inject-rules.js",
     "PostToolUse": ".claude-plugin/hooks/post-edit-check.js"
   },
-  "commands": {
-    "designsense": ".claude-plugin/commands/designsense.js",
-    "designsense-review": ".claude-plugin/commands/designsense-review.js",
-    "designsense-audit": ".claude-plugin/commands/designsense-audit.js",
-    "designsense-a11y": ".claude-plugin/commands/designsense-a11y.js",
-    "designsense-tokens": ".claude-plugin/commands/designsense-tokens.js",
-    "designsense-states": ".claude-plugin/commands/designsense-states.js",
-    "designsense-style": ".claude-plugin/commands/designsense-style.js",
-    "designsense-help": ".claude-plugin/commands/designsense-help.js"
-  },
   "skills": [
     ".claude-plugin/skills/designsense/SKILL.md",
     ".claude-plugin/skills/designsense-style/SKILL.md",

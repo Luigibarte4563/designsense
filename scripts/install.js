@@ -11,18 +11,33 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const HOME = process.env.HOME || process.env.USERPROFILE || '';
 
+const COMMANDS = [
+  ['designsense', 'Set principles level (lite|full|strict)'],
+  ['designsense-review', 'Review changed files for UI/UX issues'],
+  ['designsense-audit', 'Audit repo or page for UI/UX issues'],
+  ['designsense-a11y', 'Focused accessibility scan'],
+  ['designsense-tokens', 'Extract hardcoded values to design tokens'],
+  ['designsense-states', 'Find missing loading/empty/error states'],
+  ['designsense-style', 'List, switch, mix, preview, or disable styles'],
+  ['designsense-help', 'Show all commands and rules'],
+];
+
 const AGENTS = {
   claude: {
     name: 'Claude Code',
     detect: () => fs.existsSync(path.join(HOME, '.claude')),
     dir: () => path.join(HOME, '.claude', 'plugins', 'designsense'),
-    install: (force, dry) => copyDir(path.join(ROOT, '.claude-plugin'), AGENTS.claude.dir(), force, dry),
+    install: (force, dry) => copyPlugin(AGENTS.claude.dir(), force, dry),
   },
   opencode: {
     name: 'OpenCode',
     detect: () => fs.existsSync(path.join(HOME, '.opencode')),
     dir: () => path.join(HOME, '.opencode', 'plugins'),
-    install: (force, dry) => copyFile(path.join(ROOT, '.opencode', 'plugins', 'designsense.mjs'), path.join(AGENTS.opencode.dir(), 'designsense.mjs'), force, dry),
+    install: (force, dry) => {
+      const ok = copyFile(path.join(ROOT, '.opencode', 'plugins', 'designsense.mjs'), path.join(AGENTS.opencode.dir(), 'designsense.mjs'), force, dry);
+      writeOpenCodeCommands(force, dry);
+      return ok;
+    },
   },
   kiro: {
     name: 'Kiro',
@@ -36,13 +51,10 @@ const AGENTS = {
     dir: () => path.join(HOME, '.gemini', 'extensions', 'designsense'),
     install: (force, dry) => {
       const dir = AGENTS.gemini.dir();
-      const ok = copyDir(path.join(ROOT, '.claude-plugin'), path.join(dir, '.claude-plugin'), force, dry);
-      fs.existsSync(path.join(ROOT, 'gemini-extension.json')) &&
-        copyFile(path.join(ROOT, 'gemini-extension.json'), path.join(dir, 'gemini-extension.json'), force, dry);
-      const hooks = path.join(ROOT, '.claude-plugin', 'hooks');
+      const ok = copyPlugin(dir, force, dry);
       const entry = [
-        `const { injectRules } = require(${JSON.stringify(path.join(hooks, 'inject-rules.js').replace(/\\/g, '/'))});`,
-        `const { postEditCheck } = require(${JSON.stringify(path.join(hooks, 'post-edit-check.js').replace(/\\/g, '/'))});`,
+        `const { injectRules } = require('./.claude-plugin/hooks/inject-rules.js');`,
+        `const { postEditCheck } = require('./.claude-plugin/hooks/post-edit-check.js');`,
         'module.exports = { injectRules, postEditCheck };',
         '',
       ].join('\n');
@@ -69,6 +81,48 @@ function copyDir(src, dest, overwrite, dry) {
   fs.mkdirSync(dest, { recursive: true });
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
     const s = path.join(src, entry.name);
+    const d = path.join(dest, entry.name);
+    if (entry.isDirectory()) copyDir(s, d, overwrite, dry);
+    else if (overwrite || !fs.existsSync(d)) fs.copyFileSync(s, d);
+  }
+  return true;
+}
+
+// OpenCode registers slash commands from Markdown files in ~/.config/opencode/commands.
+function writeOpenCodeCommands(force, dry) {
+  const installed = path.join(HOME, '.claude', 'plugins', 'designsense', '.claude-plugin', 'commands');
+  const scripts = fs.existsSync(path.join(installed, 'designsense-review.js'))
+    ? installed
+    : path.join(ROOT, '.claude-plugin', 'commands');
+  const dest = path.join(HOME, '.config', 'opencode', 'commands');
+  if (dry) return;
+  fs.mkdirSync(dest, { recursive: true });
+  for (const [name, description] of COMMANDS) {
+    const script = path.join(scripts, `${name}.js`).replace(/\\/g, '/');
+    const body = [
+      '---',
+      `description: ${description}`,
+      '---',
+      '',
+      `Run the designsense ${name} tool and act on its output:`,
+      '',
+      '!`node "' + script + '" $ARGUMENTS`',
+      '',
+      'Use the output above as the source of truth. Apply any fixes it identifies.',
+      '',
+    ].join('\n');
+    const file = path.join(dest, `${name}.md`);
+    if (force || !fs.existsSync(file)) fs.writeFileSync(file, body);
+  }
+}
+
+// Copy the whole plugin (incl. styles/) so relative hook paths keep working.
+function copyPlugin(dest, overwrite, dry) {
+  if (dry) return true;
+  fs.mkdirSync(dest, { recursive: true });
+  for (const entry of fs.readdirSync(ROOT, { withFileTypes: true })) {
+    if (['.git', 'node_modules'].includes(entry.name)) continue;
+    const s = path.join(ROOT, entry.name);
     const d = path.join(dest, entry.name);
     if (entry.isDirectory()) copyDir(s, d, overwrite, dry);
     else if (overwrite || !fs.existsSync(d)) fs.copyFileSync(s, d);
