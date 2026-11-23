@@ -1,0 +1,29 @@
+{
+  "name": "designsense",
+  "description": "DesignSense UI/UX system — tokens, accessibility, states, style presets",
+  "version": "0.1.0",
+  "commands": {
+    "designsense": {
+      "description": "Generate front-end code with DesignSense principles",
+      "usage": "/designsense [style] [level]",
+      "examples": [
+        "/designsense",
+        "/designsense neobrutalism",
+        "/designsense glassmorphism strict",
+        "/designsense minimalism lite"
+      ]
+    },
+    "designsense-review": {
+      "description": "Review changed files against DesignSense rules",
+      "usage": "/designsense-review"
+    },
+    "designsense-audit": {
+      "description": "Audit entire codebase against DesignSense rules",
+      "usage": "/designsense-audit [path] [level]"
+    },
+    "designsense-tokens": {
+      "description": "Generate design tokens only",
+      "usage": "/designsense-tokens [style] [format]"
+    }
+  }
+}
