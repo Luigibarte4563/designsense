@@ -8,7 +8,7 @@
 
 ## Why designsense?
 
-AI agents generate working code but often miss:
+AI agents generate working code but often miss:....
 - **Accessibility** (contrast, focus, labels, keyboard nav)
 - **Interaction states** (loading, empty, error, disabled)
 - **Design consistency** (magic numbers, hardcoded colors, spacing)
