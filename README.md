@@ -11,7 +11,7 @@
 AI agents generate working code but often miss::
 - **Accessibility** (contrast, focus, labels, keyboard nav)
 - **Interaction states** (loading, empty, error, disabled)
-- **Design consistency** (magic numbers, hardcoded colors, spacing)
+- **Design consistency** (magic numbers, hardcoded colors, spacing)/
 - **Responsive behavior** (mobile-first, fluid layouts)
 
 designsense adds **always-on rules** + **optional visual styles** so agents produce production-ready UI by default.
